@@ -1,9 +1,94 @@
-# Bulk Image Processing Scripts
+# Bulk Image Downloader, Watermark Remover, and Replacer Suite
 
 ## Overview
 This repository contains a collection of Python scripts designed to automate various image processing tasks, including downloading images from an Excel dataset, categorizing images into folders, removing and replacing watermarks in bulk, and checking the completion status of the image processing. These scripts utilize multi-threading for optimized performance and employ the LaMa inpainting model to ensure high-quality results.
 
-## Scripts
+## Combined Details
+## Features
+
+1. **Bulk Image Downloading**:
+    - Automatically download images from a dataset.
+    - Categorize and save images into specified folders.
+
+2. **Watermark Removal**:
+    - Remove watermarks from images in bulk using the LaMa inpainting model.
+    - Supports multi-threaded processing for faster performance.
+
+3. **Watermark Replacement**:
+    - Add new watermarks to images after removing existing ones.
+    - Customizable watermark size and position.
+
+4. **Dynamic Scheduling**:
+    - Run scripts with specified intervals to manage CPU load.
+    - Automatically pause and resume processing based on the schedule.
+
+5. **Checkpointing**:
+    - Save progress at regular intervals to avoid reprocessing.
+    - Resume from the last checkpoint in case of interruptions.
+
+6. **Comprehensive Logging**:
+    - Detailed logging of processing steps and errors.
+    - Separate logs for debugging and console output.
+
+7. **Empty Folder Skipping**:
+    - Automatically skip folders with no images.
+    - Log details about skipped folders.
+
+8. **Image Completion Check**:
+    - Verify if all images in the task folder are processed.
+    - Generate statistics on completed and pending images.
+
+9. **Error Handling**:
+    - Robust error handling to manage processing issues.
+    - Log exceptions and continue processing remaining images.
+
+10. **Multi-threading**:
+    - Use multi-threading for efficient image processing.
+    - Adjustable number of worker threads based on system capability.
+
+## Use Cases
+
+1. **E-commerce Platforms**:
+    - Bulk download product images, remove old watermarks, and add new ones.
+    - Organize images into categories for easy management.
+
+2. **Real Estate Listings**:
+    - Process property images by removing and replacing watermarks.
+    - Ensure all images are correctly processed and categorized.
+
+3. **Photography Services**:
+    - Manage client photos by downloading, watermarking, and categorizing.
+    - Automate the process to save time and ensure consistency.
+
+4. **Social Media Management**:
+    - Prepare images for social media by adding branding watermarks.
+    - Schedule processing to optimize system performance.
+
+5. **Digital Marketing**:
+    - Download and process images for marketing campaigns.
+    - Add campaign-specific watermarks and organize images.
+
+6. **Content Creation**:
+    - Automate image preparation for blogs, websites, and other content platforms.
+    - Ensure all images are watermark-free and properly branded.
+
+7. **Archives and Libraries**:
+    - Process large image datasets for archival purposes.
+    - Ensure images are organized and free from unwanted watermarks.
+
+8. **Educational Institutions**:
+    - Manage images for school events, yearbooks, and online galleries.
+    - Automate the downloading and watermarking process.
+
+9. **Corporate Branding**:
+    - Maintain consistency in corporate images by adding standardized watermarks.
+    - Process images in bulk for internal and external use.
+
+10. **Media and Entertainment**:
+    - Prepare promotional images by removing existing watermarks and adding new ones.
+    - Automate the categorization and organization of images for easy access.
+
+## Scripts Details
 
 ### 1. `bulk_image_downloader_from_dataset.py`
 This script automates the process of downloading images from URLs provided in an Excel dataset and categorizing them into folders.
