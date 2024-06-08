@@ -3,6 +3,9 @@
 ## Overview
 This repository contains a collection of Python scripts designed to automate various image processing tasks, including downloading images from an Excel dataset, categorizing images into folders, removing and replacing watermarks in bulk, and checking the completion status of the image processing. These scripts utilize multi-threading for optimized performance and employ the LaMa inpainting model to ensure high-quality results.
 
+## DEMO AFTER AND BEFORE WATERMARK REPLACEMENT
+![Demo Image](demo.png)
+
 ## Combined Details
 ## Features
 
